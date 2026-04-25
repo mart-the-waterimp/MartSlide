@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронювання - Аромат Кави</title>
+    <link rel="icon" type="image/png" href="PNGs/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="PNGs/2.png" alt="Логотип" class="logo">
+        <div class="nav-links">
+            <a href="index.html">Головна</a>
+            <a href="menu.html">Меню</a>
+            <a href="book.html" class="active">Бронювання</a>
+            <a href="about.html">Про нас</a>
+        </div>
+    </nav>
+
+    <main class="container" style="max-width: 800px;"> <h2 style="text-align: center; margin-bottom: 10px;">Забронювати столик</h2>
+        <p style="text-align: center; color: #6d4c41; margin-bottom: 30px;">Заповніть форму, і ми підготуємо найкраще місце для вас.</p>
+        
+        <form class="booking-form" action="#" method="post" style="max-width: 100%;">
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <label for="table-select" style="font-weight: bold;">Оберіть столик:</label>
+                    <select id="table-select" name="table" required style="padding: 12px; border-radius: 8px; border: 1px solid #ddd;">
+                        <option value="" disabled selected>Виберіть номер...</option>
+                        <option>Стіл №1 (На терасі - Надворі)</option>
+                        <option>Стіл №2 (На терасі - Надворі)</option>
+                        <option>Стіл №3 (Біля вікна)</option>
+                        <option>Стіл №4 (Біля вікна)</option>
+                        <option>Стіл №5 (В центрі залу)</option>
+                        <option>Стіл №6 (В центрі залу)</option>
+                        <option>Стіл №7 (Біля бару)</option>
+                        <option>Стіл №8 (Біля бару)</option>
+                        <option>Стіл №9 (Тихий куточок)</option>
+                        <option>Стіл №10 (Тихий куточок)</option>
+                        <option>Стіл №11 (Біля каміна)</option>
+                        <option>Стіл №12 (Біля каміна)</option>
+                        <option>Стіл №13 (Другий поверх)</option>
+                        <option>Стіл №14 (Надворі - затишний)</option>
+                        <option>Стіл №15 (Біля бару)</option>
+                        <option>Стіл №16 (Біля бару)</option>
+                        <option>Стіл №17 (Тихий куточок)</option>
+                        <option>Стіл №18 (В центрі залу)</option>
+                        <option>Стіл №19 (В центрі залу)</option>
+                        <option>Стіл №20 (В центрі залу)</option>
+                    </select>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <label for="guests" style="font-weight: bold;">Кількість гостей:</label>
+                    <input type="number" id="guests" name="guests" min="1" max="10" placeholder="Напр: 2" required style="padding: 12px; border-radius: 8px; border: 1px solid #ddd;">
+                </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 10px;">
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <label for="date" style="font-weight: bold;">Дата візиту:</label>
+                    <input type="date" id="date" name="date" required style="padding: 12px; border-radius: 8px; border: 1px solid #ddd;">
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <label for="time" style="font-weight: bold;">Час:</label>
+                    <input type="time" id="time" name="time" required style="padding: 12px; border-radius: 8px; border: 1px solid #ddd;">
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+                <label for="name" style="font-weight: bold;">Ваше ім'я:</label>
+                <input type="text" id="name" name="name" placeholder="Введіть ім'я" required style="padding: 12px; border-radius: 8px; border: 1px solid #ddd;">
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+                <label for="phone" style="font-weight: bold;">Номер телефону:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+380..." required style="padding: 12px; border-radius: 8px; border: 1px solid #ddd;">
+            </div>
+
+            <button type="submit" class="btn" style="width: 100%; margin-top: 20px; padding: 15px;">Забронювати зараз</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Контакти</h4>
+                <p>📍 вул. Кавова, 15</p>
+                <p>📞 +38 (099) 123-45-67</p>
+            </div>
+            <div class="footer-section">
+                <h4>Чи знаєте ви?</h4>
+                <p class="coffee-fact">Аромат кави допомагає зменшити стрес, навіть якщо ви її не п'єте.</p>
+            </div>
+            <div class="footer-section social-links">
+                <h4>Ми в мережах</h4>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Telegram</a>
+            </div>
+        </div>
+        <p class="copyright" style="text-align: center; margin-top: 20px; font-size: 12px; opacity: 0.7;">&copy; 2026 Аромат Кави. Всі права захищені.</p>
+    </footer>
+</body>
+</html>
